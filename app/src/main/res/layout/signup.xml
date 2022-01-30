@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    tools:context=".Signup">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/icon0" />
+
+    <EditText
+        android:id="@+id/username_ed"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="55dp"
+        android:hint="User Name"
+       />
+    <EditText
+        android:id="@+id/email_ed"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="55dp"
+        android:hint="Email"
+        />
+    <EditText
+        android:id="@+id/pass_ed"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="55dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        />
+
+    <EditText
+        android:id="@+id/cpass_ed"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="55dp"
+        android:inputType="textPassword"
+        android:hint="Confirem Password"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_usertype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp">
+        <RadioButton
+            android:id="@+id/rb_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="doctor"
+            android:layout_marginRight="20dp"/>
+        <RadioButton
+            android:id="@+id/rb_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="student"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#A5DBF8"
+        android:text="signup"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:onClick="signup"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textSize="15dp"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/l_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click here to login"
+            android:textSize="15dp"
+            android:textColor="#1C6CD5"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+</LinearLayout>

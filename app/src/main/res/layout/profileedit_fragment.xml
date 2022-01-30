@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+   >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#A5DBF8">
+    <ImageView
+        android:id="@+id/editprofile_backimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/arrowback_icon"
+        android:layout_marginTop="3dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/editprofile_userimg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="120dp"
+        android:src="@drawable/outline_perm_identity_white_18"
+        app:civ_border_width="0.5dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="85dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editprofile_username"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textSize="30dp"
+            android:textColor="@color/white" />
+        <ImageView
+            android:id="@+id/editprofile_updateusername"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/outline_refresh_24"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Major"
+            android:textSize="30dp"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/editprofile_major"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:hint="CS"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"/>
+        <ImageView
+            android:id="@+id/editprofile_updateusermajor"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/outline_refresh_24"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="85dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level"
+            android:textSize="30dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/editprofile_level"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:hint="10"
+            android:textColor="@color/white"
+            android:layout_marginLeft="40dp"/>
+        <ImageView
+            android:id="@+id/editprofile_updateuserlevel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/outline_refresh_24"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skills"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="180dp"/>
+
+    <EditText
+        android:id="@+id/editprofile_skilltitle_edtxt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Java Programming"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="130dp"
+        android:textColor="@color/white"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="200dp">
+        <EditText
+            android:id="@+id/editprofile_skillrate_edtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="5"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/10"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/editprofile_skillimg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/attach_cer_icon"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/editprofile_addskill"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/addicon" />
+</LinearLayout>
+
+
+</ScrollView>
